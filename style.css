@@ -1,0 +1,46 @@
+#img {
+    margin-left: 350px;
+    width: 50%;
+}
+
+#micon {
+    width: 50px;
+    margin-bottom: -180px;
+    margin-left: -520px;
+}
+
+#muicon {
+    width: 50px;
+    margin-bottom: -180px;
+    margin-left: 30px;
+}
+
+#ticon {
+    width: 50px;
+    margin-bottom: -180px;
+    margin-left: 40px;
+}
+
+
+/*.back {
+    background-color: none;
+    width: 250px;
+    height: 200px;
+    margin-left: 600px;
+    margin-bottom: 100px;
+}*/
+
+#time {
+    margin-left: 670px;
+    font-size: 20px;
+    color: green;
+    font: bold;
+    margin-top: -500px;
+}
+
+#date {
+    margin-left: 680px;
+    font-size: 20px;
+    color: green;
+    font: bold;
+}

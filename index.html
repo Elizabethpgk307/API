@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="style.css"></script>
+<script src="time.js"></script>
+
+<head>
+
+
+    <body onload="displaytime()">
+
+        <div id="watch">
+            <img src="smart-watch.jpg" alt="Cover Page" id="img" />
+
+            <a href="#"><img src="msg-icon.png" id="micon" onclick="message()"></a>
+            <a href="#"><img src="music-icon.png" id="muicon" onclick="music()"></a>
+            <a href="#"><img src="timer-icon.png" id="ticon" onclick="timer()"></a>
+            <div class="back"></div>
+
+
+            <p id="time"><b>dtiuethiru</b></p>
+            <p id="date"><b>dtiuethiru</b></p>
+        </div>
+    </body>
+    <script>
+        function message() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("watch").innerHTML = this.responseText;
+                    console.log(responseText);
+                }
+            };
+            xhttp.open("GET", "message.html", true);
+            xhttp.send();
+        }
+
+        function music() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("watch").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "music.html", true);
+            xhttp.send();
+        }
+
+        function timer() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("watch").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "timer.html", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+
+
+</html>
